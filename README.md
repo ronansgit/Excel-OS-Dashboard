@@ -167,6 +167,7 @@ Essa estrutura permite sair de uma visão descritiva dos indicadores e avançar 
 
 ## 11. Estrutura do Projeto
 
+```text
 Excel-OS-Dashboard/
 │
 ├── dashboard.png
@@ -178,7 +179,7 @@ Excel-OS-Dashboard/
 ├── tabelas-dinamicas.png
 │
 └── README.md
-
+```
 ## 12. Resultado
 
 O projeto transforma uma base de Ordens de Serviço em uma solução analítica orientada ao diagnóstico operacional.
