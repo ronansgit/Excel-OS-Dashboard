@@ -112,5 +112,77 @@ Clientes
 Diagnóstico final
 
 Essa estrutura permite sair de uma visão descritiva dos indicadores e avançar para a identificação dos principais pontos de concentração dos atraso
+```
 
 ## 9. Arquitetura da Solução
+
+                         DADOS
+                           │
+                           ▼
+                    ┌─────────────┐
+                    │ POWER QUERY │
+                    └─────────────┘
+                           │
+                    Tratamento
+                    Transformação
+                           │
+                           ▼
+                    ┌─────────────┐
+                    │ POWER PIVOT │
+                    └─────────────┘
+                           │
+                 Modelo + Relacionamentos
+                           │
+                           ▼
+                       ┌───────┐
+                       │  DAX  │
+                       └───────┘
+                           │
+                  Medidas / Indicadores
+                           │
+                           ▼
+                ┌───────────────────┐
+                │ TABELAS DINÂMICAS │
+                └───────────────────┘
+                           │
+                           ▼
+                  ┌────────────────┐
+                  │   DASHBOARD    │
+                  └────────────────┘
+                           │
+                    Storytelling + UI/UX
+
+## 10. Ferramentas e Skills
+
+| Tecnologia / Skill       | Aplicação                              |
+| ------------------------ | -------------------------------------- |
+| **Microsoft Excel**      | Desenvolvimento da solução e dashboard |
+| **Power Query**          | Tratamento e transformação dos dados   |
+| **Power Pivot**          | Modelagem e relacionamentos            |
+| **DAX**                  | Criação de medidas e indicadores       |
+| **Tabelas Dinâmicas**    | Estruturação das análises              |
+| **Segmentação de Dados** | Filtros e interação                    |
+| **Data Storytelling**    | Organização da narrativa analítica     |
+| **UI/UX Design**         | Organização visual e usabilidade       |
+
+## 11. Estrutura do Projeto
+
+Excel-OS-Dashboard/
+│
+├── dashboard.png
+├── base-dados.png
+├── tratamento-dados.png
+├── dcalendario.png
+├── relacionamento.png
+├── dax.png
+├── tabelas-dinamicas.png
+│
+└── README.md
+
+## 12. Resultado
+
+O projeto transforma uma base de Ordens de Serviço em uma solução analítica orientada ao diagnóstico operacional.
+
+Além da consolidação dos indicadores, o dashboard organiza as informações em uma narrativa que permite investigar quando os atrasos acontecem, onde estão concentrados, quais serviços e responsáveis estão envolvidos e quais causas aparecem com maior frequência.
+
+O resultado combina ETL, modelagem de dados, DAX, visualização, Data Storytelling e UI/UX em uma única solução desenvolvida no Excel.
